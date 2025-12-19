@@ -1,0 +1,31 @@
+{
+  "name": "backendserver",
+  "version": "1.0.0",
+  "description": "UnixShopBot: AI ChatBot for Ecommerce built on shell and nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "seed": "node seedDatabase.js"
+  },
+  "author": "TanushkaRathore",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/core": "^0.3.78",
+    "@langchain/google-genai": "^0.2.18",
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/langgraph-checkpoint-mongodb": "^0.1.1",
+    "@langchain/mongodb": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^3.25.76"
+  }
+}
