@@ -19,10 +19,10 @@ async function startServer() {
     app.get("/", (req, res) => {
       res.send("LangGraph Agent Server is running.");
     });
-   
+
     app.post("/chat", async (req, res) => {
       const initialMessage = req.body.message;
-      const threadId = Date.now().toString(); 
+      const threadId = Date.now().toString();
       console.log(`Received initial message: ${initialMessage}`);
       try {
         const response = await callAgent(client, initialMessage, threadId);

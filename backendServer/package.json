@@ -4,10 +4,10 @@
   "description": "UnixShopBot: AI ChatBot for Ecommerce built on shell and nodejs",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "seed": "node seedDatabase.js"
-  },
+  "start": "node app.js",
+  "dev": "nodemon app.js",
+  "seed": "node seedDatabase.js"
+},
   "author": "TanushkaRathore",
   "license": "ISC",
   "devDependencies": {
